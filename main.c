@@ -27,7 +27,7 @@ main (int argc, char **argv){
     }else{               // In the parent
         // wait the child to stop.
         waitChild ();
-        // bfd_func(argv[1]);  // get symbol table
+        bfd_func(argv[1]);  // get symbol table
         printf ("A minimal ptrace-based debugger, copyright (C) 2021, by SSE of USTC.\n"
                 "Now debugging: %s (pid: %d)\n", argv[1], pid);
         // now, the debugger is ready to read commands in

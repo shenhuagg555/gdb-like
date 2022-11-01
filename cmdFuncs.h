@@ -4,13 +4,13 @@
 #include "ast.h"
 #include <inttypes.h>
 #include <Zydis/Zydis.h>    // zydis
-// #include <assert.h>
-// #include <bfd.h>            // bfd
+#include <assert.h>
+#include <bfd.h>            // bfd
 
-// asymbol **symbol_table;
-// long num_symbols;
+asymbol **symbol_table;
+long num_symbols;
 
-// void bfd_func(char *file);
+void bfd_func(char *file);
 
 // A tedious but simple parsing function, parsing
 // user input string into a command data structure.

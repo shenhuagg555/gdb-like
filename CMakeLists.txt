@@ -13,5 +13,8 @@ add_subdirectory("deps/zydis")
 # Add our project executable
 add_executable(gdb-like ast.c cmdFuncs.c main.c)
 
+add_compile_definitions("PACKAGE=gdb-like")
+add_compile_definitions("PACKAGE_VERSION=1")
+
 # Have CMake link our project executable against Zydis.
-target_link_libraries("gdb-like" PRIVATE "Zydis")
+target_link_libraries("gdb-like" PRIVATE "Zydis" -lbfd -liberty -ldl -lz)

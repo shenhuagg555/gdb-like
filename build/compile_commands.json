@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build",
-  "command": "/usr/bin/gcc -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/dependencies/zycore/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis/zycore -g -pthread -std=gnu99 -o CMakeFiles/gdb-like.dir/ast.c.o -c /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/ast.c",
+  "command": "/usr/bin/gcc -DPACKAGE=gdb-like -DPACKAGE_VERSION=1 -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/dependencies/zycore/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis/zycore -g -pthread -std=gnu99 -o CMakeFiles/gdb-like.dir/ast.c.o -c /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/ast.c",
   "file": "/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/ast.c"
 },
 {
   "directory": "/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build",
-  "command": "/usr/bin/gcc -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/dependencies/zycore/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis/zycore -g -pthread -std=gnu99 -o CMakeFiles/gdb-like.dir/cmdFuncs.c.o -c /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/cmdFuncs.c",
+  "command": "/usr/bin/gcc -DPACKAGE=gdb-like -DPACKAGE_VERSION=1 -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/dependencies/zycore/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis/zycore -g -pthread -std=gnu99 -o CMakeFiles/gdb-like.dir/cmdFuncs.c.o -c /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/cmdFuncs.c",
   "file": "/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/cmdFuncs.c"
 },
 {
   "directory": "/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build",
-  "command": "/usr/bin/gcc -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/dependencies/zycore/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis/zycore -g -pthread -std=gnu99 -o CMakeFiles/gdb-like.dir/main.c.o -c /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/main.c",
+  "command": "/usr/bin/gcc -DPACKAGE=gdb-like -DPACKAGE_VERSION=1 -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/dependencies/zycore/include -I/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/build/deps/zydis/zycore -g -pthread -std=gnu99 -o CMakeFiles/gdb-like.dir/main.c.o -c /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/main.c",
   "file": "/home/twoballs/Project/ustc/sysprog-fa22/gdb-like/main.c"
 },
 {

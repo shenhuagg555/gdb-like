@@ -8,39 +8,39 @@
 #include "cmdFuncs.h"
 #include "ast.h"
 
-// // store symbol's name and value
-// void bfd_func(char *file){
-//     long storage_needed;
-//     bfd *abfd;
+// store symbol's name and value
+void bfd_func(char *file){
+    long storage_needed;
+    bfd *abfd;
 
-//     bfd_init(); // magic
+    bfd_init(); // magic
 
-//     abfd = bfd_openr(file, NULL);
-//     assert(abfd != NULL);
-//     bfd_check_format(abfd, bfd_object);
-//     storage_needed = bfd_get_symtab_upper_bound(abfd);
-//     assert(storage_needed >= 0);
+    abfd = bfd_openr(file, NULL);
+    assert(abfd != NULL);
+    bfd_check_format(abfd, bfd_object);
+    storage_needed = bfd_get_symtab_upper_bound(abfd);
+    assert(storage_needed >= 0);
 
-//     symbol_table = (asymbol**)malloc(storage_needed);
-//     assert(symbol_table != 0);
-//     num_symbols = bfd_canonicalize_symtab(abfd, symbol_table);
-//     assert(num_symbols >= 0);
-// }
+    symbol_table = (asymbol**)malloc(storage_needed);
+    assert(symbol_table != 0);
+    num_symbols = bfd_canonicalize_symtab(abfd, symbol_table);
+    assert(num_symbols >= 0);
+}
 
-// // find symbol address
-// long symbol_address(char *s){
-//     symbol_info symbolinfo;
-//     for(int i = 0; i < num_symbols; i++){
-//         if (symbol_table[i]->section == NULL) continue;
+// find symbol address
+long symbol_address(char *s){
+    symbol_info symbolinfo;
+    for(int i = 0; i < num_symbols; i++){
+        if (symbol_table[i]->section == NULL) continue;
 
-//         bfd_symbol_info(symbol_table[i], &symbolinfo);
-//         if (strcmp(s, symbolinfo.name))  continue;
+        bfd_symbol_info(symbol_table[i], &symbolinfo);
+        if (strcmp(s, symbolinfo.name))  continue;
 
-//         printf("%s : 0x%x\n", symbolinfo.name, symbolinfo.value);
-//         return (long)symbolinfo.value;
-//     }
-//     return -1;
-// }
+        printf("%s : 0x%x\n", symbolinfo.name, symbolinfo.value);
+        return (long)symbolinfo.value;
+    }
+    return -1;
+}
 
 // A tedious but simple parsing function, parsing
 // user input string into a command data structure.
@@ -63,8 +63,9 @@ parseCommand (char *s, int pid){
             printf ("break requires an address\n");
             return 0;
         }
-        // if(s[0] != '0') addr = symbol_address(s);
-        // else 
+        if(s[0] != '0') 
+            addr = symbol_address(s);
+        else 
             addr = strtol (s, 0, 0);
         return Cmd_new_break (addr, pid);
     }
@@ -98,8 +99,9 @@ parseCommand (char *s, int pid){
             printf ("x/i requires an address\n");
             return 0;
         }
-        // if(s[0] != '0') addr = symbol_address(s);
-        // else 
+        if(s[0] != '0') 
+            addr = symbol_address(s);
+        else 
             addr = strtol (s, 0, 0);
         return Cmd_new_xi (addr, pid);
     }
@@ -110,8 +112,9 @@ parseCommand (char *s, int pid){
             printf ("x/x requires an address\n");
             return 0;
         }
-        // if(s[0] != '0') addr = symbol_address(s);
-        // else 
+        if(s[0] != '0') 
+            addr = symbol_address(s);
+        else 
             addr = strtol (s, 0, 0);
         return Cmd_new_xx (addr, pid);
     }

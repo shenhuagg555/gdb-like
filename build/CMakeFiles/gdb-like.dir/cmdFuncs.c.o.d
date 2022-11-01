@@ -113,4 +113,10 @@ CMakeFiles/gdb-like.dir/cmdFuncs.c.o: \
  /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include/Zydis/FormatterBuffer.h \
  /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include/Zydis/Segment.h \
  /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include/Zydis/Disassembler.h \
- /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include/Zydis/Utils.h
+ /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/deps/zydis/include/Zydis/Utils.h \
+ /usr/local/include/bfd.h /usr/local/include/ansidecl.h \
+ /usr/local/include/symcat.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
+ /usr/local/include/diagnostics.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h
