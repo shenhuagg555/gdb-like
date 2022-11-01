@@ -1,0 +1,1 @@
+/usr/bin/gcc -g "CMakeFiles/gdb-like.dir/ast.c.o" "CMakeFiles/gdb-like.dir/cmdFuncs.c.o" "CMakeFiles/gdb-like.dir/main.c.o" -o /home/twoballs/Project/ustc/sysprog-fa22/gdb-like/gdb-like  deps/zydis/libZydis.a deps/zydis/zycore/libZycore.a -pthread 
